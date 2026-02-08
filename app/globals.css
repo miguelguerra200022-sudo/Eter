@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+
+  /* ÉTER Palette - Future Premium */
+  --color-eter-dark: #050505;
+  --color-eter-cyan: #00F0FF;
+  --color-eter-purple: #BD00FF;
+  --color-eter-red: #FF2A6D;
+  --color-eter-glass: rgba(255, 255, 255, 0.05);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-eter-dark: var(--color-eter-dark);
+  --color-eter-cyan: var(--color-eter-cyan);
+  --color-eter-purple: var(--color-eter-purple);
+  --color-eter-red: var(--color-eter-red);
+  --color-eter-glass: var(--color-eter-glass);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  overflow-y: auto;
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-y: auto !important;
+  /* Force scroll */
+  overflow-x: hidden;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities */
+.glass-panel {
+  background: var(--color-eter-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
