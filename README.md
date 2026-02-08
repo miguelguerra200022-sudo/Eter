@@ -45,7 +45,7 @@ npm run dev
 
 ## 🌟 Créditos y Reconocimientos
 
-Este proyecto fue concebido y desarrollado por **[Tu Nombre / DJ Kevinzito]**.
+Este proyecto fue concebido y desarrollado por **[Miguel GUerra]**.
 
 > *"Dedicado a todos los que buscan caminos donde no los hay."*
 
